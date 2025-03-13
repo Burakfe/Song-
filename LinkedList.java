@@ -1,21 +1,21 @@
 /*
-    * LinkedList class
-    * To use this class; LinkedList list = new LinkedList();
-    * This class contains the following methods:
-    * 1. insertHead(int data) - insert a new node at the beginning of the list
-    * 2. insertTail(int data) - insert a new node at the end of the list
-    * 3. deleteHead() - delete the first node of the list
-    * 4. deleteTail() - delete the last node of the list
-    * 5. search(int key) - search for a node with a specific key
-    * 6. display() - print the list
-    * This class also contains a Node class which is a nested class.
+* LinkedList class
+* To use this class; LinkedList list = new LinkedList();
+* This class contains the following methods:
+* 1. insertHead(int data) - insert a new node at the beginning of the list
+* 2. insertTail(int data) - insert a new node at the end of the list
+* 3. deleteHead() - delete the first node of the list
+* 4. deleteTail() - delete the last node of the list
+* 5. search(int key) - search for a node with a specific key
+* 6. display() - print the list
+* This class also contains a Node class which is a nested class.
  */
 public class LinkedList {
 
     // creating a node class
     private static class Node {
 
-        private int data;
+        private final int data;
         private Node next;
 
         private Node(int data) {
